@@ -1,0 +1,43 @@
+buildscript {
+	repositories {
+		maven { url "http://repo.spring.io/libs-snapshot" }
+		mavenLocal()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC3")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+
+jar {
+	baseName = 'spring-boot-mybatis'
+	version =  '0.1.0'
+}
+
+repositories {
+	mavenCentral()
+	maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+dependencies {
+	compile files('lib/sqljdbc4.jar')
+	
+	compile("org.springframework.boot:spring-boot-starter-web:1.0.0.RC3")
+	compile("org.springframework.boot:spring-boot-starter-actuator:1.0.0.RC3")
+	
+	compile("org.springframework:spring-jdbc:4.0.0.RELEASE")
+	
+	compile("javax.inject:javax.inject:1")
+//	
+	compile("org.mybatis:mybatis:3.2.4")
+	compile("org.mybatis:mybatis-spring:1.2.2")
+	
+	compile("org.apache.tomcat:tomcat-jdbc:7.0.50")
+	
+	testCompile("junit:junit:4.11")
+	testCompile("org.springframework:spring-test:4.0.1.RELEASE")
+}
+
