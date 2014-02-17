@@ -23,7 +23,6 @@ repositories {
 }
 
 dependencies {
-	compile files('lib/sqljdbc4.jar')
 	
 	compile("org.springframework.boot:spring-boot-starter-web:1.0.0.RC3")
 	compile("org.springframework.boot:spring-boot-starter-actuator:1.0.0.RC3")
