@@ -30,6 +30,7 @@ dependencies {
 	compile("org.springframework:spring-jdbc:4.0.0.RELEASE")
 	
 	compile("javax.inject:javax.inject:1")
+	compile("org.hsqldb:hsqldb:2.2.9")
 //	
 	compile("org.mybatis:mybatis:3.2.4")
 	compile("org.mybatis:mybatis-spring:1.2.2")
