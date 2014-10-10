@@ -2,7 +2,7 @@ package at.ebssoftware.ebs.timesheet.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(name = "tomcat.datasource", ignoreUnknownFields = false)
+@ConfigurationProperties(prefix = "tomcat.datasource", ignoreUnknownFields = false)
 public class TomcatPoolDataSourceProperties {
 
 	private String driverClassName; 

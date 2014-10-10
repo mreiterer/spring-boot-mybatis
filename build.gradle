@@ -24,12 +24,13 @@ repositories {
 
 dependencies {
 	
-	compile("org.springframework.boot:spring-boot-starter-web:1.0.0.RC3")
-	compile("org.springframework.boot:spring-boot-starter-actuator:1.0.0.RC3")
+	compile("org.springframework.boot:spring-boot-starter-web:1.1.6.BUILD-SNAPSHOT")
+	compile("org.springframework.boot:spring-boot-starter-actuator:1.1.6.BUILD-SNAPSHOT")
 	
 	compile("org.springframework:spring-jdbc:4.0.0.RELEASE")
 	
 	compile("javax.inject:javax.inject:1")
+	compile("org.hsqldb:hsqldb:2.2.9")
 //	
 	compile("org.mybatis:mybatis:3.2.4")
 	compile("org.mybatis:mybatis-spring:1.2.2")
